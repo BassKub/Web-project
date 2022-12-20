@@ -2,7 +2,7 @@ const express = require("express")
 const app = express()
 
 app.get('/', (req, res) =>{
-    res.send("Welcome to my first work with nodejs")
+    res.sendFile(__dirname + '/home.html')
 })
 
 app.get('/product', (req, res) =>{
