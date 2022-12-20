@@ -5,7 +5,7 @@ app.get('/', (req, res) =>{
     res.sendFile(__dirname + '/home.html')
 })
 
-app.get('/product', (req, res) =>{
+app.get('/product', function(req, res) {
     res.sendFile(__dirname + '/Zerotwo.html')
 })
 
